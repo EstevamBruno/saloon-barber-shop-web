@@ -1,9 +1,12 @@
 import React from 'react';
+import NavbarApp from '../../components/NavbarApp';
 
 // import { Container } from './styles';
 
 const Main: React.FC = () => {
-  return <h1>Main works!</h1>;
+  return (
+    <NavbarApp />
+  );
 }
 
 export default Main;
