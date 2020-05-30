@@ -13,6 +13,7 @@ export const Container = styled.div`
 export const Infos = styled.section`
   background-color: #fff;
   max-width: 380px;
+  max-height: 450px;
   height: 100%;
   padding: 20px;
   border-radius: 16px;
@@ -48,6 +49,7 @@ export const Galery = styled.section`
   background-color: #fff;
   width: 350px;
   height: 100%;
+  max-height: 450px;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
