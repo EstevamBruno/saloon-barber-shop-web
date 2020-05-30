@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { productsData } from '../../services/api';
-import { ProductCard, ProductInformations } from './styles';
+import { ProductCard, ProductInformations, MainContainer } from './styles';
 import Product from '../../domains/product.interface';
 import { Link } from 'react-router-dom';
+import Banner from '../../components/Banner';
 
 const Main: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -12,7 +13,12 @@ const Main: React.FC = () => {
   }, []);
 
   return (
-    <div className="container-fluid">
+    <MainContainer className="container-fluid">
+      <div className="row">
+        <div className="col">
+          <Banner />
+        </div>
+      </div>
       <div className="row">
         {products.map(product => (
           <div
@@ -35,7 +41,7 @@ const Main: React.FC = () => {
           </div>
         ))}
        </div>
-    </div>
+    </MainContainer>
   );
 }
 
