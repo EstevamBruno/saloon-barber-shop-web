@@ -1,39 +1,35 @@
 import styled from "styled-components";
 
 export const ProductCard = styled.div`
+  padding: 20px 30px 0;
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 10px;
-  margin-top: 50px;
+  flex: 1;
 
   img {
     width: 130px;
     height: 130px;
+    border-radius: 6px;
     margin-right: 10px;
-    border-radius: 12px;
   }
+`;
 
-  div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+export const ProductInformations = styled.div`
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 
-    p {
-      font-size: 14px;
-    }
-
-    div {
-      width: 100%;
+   div {
       display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
+      flex-direction: column;
 
       span {
-        font-size: 24px;
-        margin-right: 5px;
+        font-size: 14px;
       }
-    }
-  }
+   }
+
+   div + div {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+   }
 `;
