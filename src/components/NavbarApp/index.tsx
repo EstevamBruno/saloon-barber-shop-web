@@ -1,17 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import { FiScissors } from 'react-icons/fi';
-import { FiShoppingCart } from 'react-icons/fi';
-
 const NavbarApp: React.FC = () => {
 
   return (
     <nav className="navbar navbar-expand-md navbar-light" style={{boxShadow: '0 0 10px #ccc'}}>
       <Link className="navbar-brand" to="#" style={{textAlign: 'center'}}>
         <h5>Saloon Barber Shop</h5>
-        <FiScissors style={{marginLeft: '5px'}} />
-        <FiShoppingCart style={{marginLeft: '5px'}} />
       </Link>
       <button className="navbar-toggler" type="button"
         data-toggle="collapse" data-target="#navbarSupportedContent"
