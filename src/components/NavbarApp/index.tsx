@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const NavbarApp: React.FC = () => {
 
   return (
-    <nav className="navbar navbar-expand-md navbar-light" style={{boxShadow: '0 0 10px #ccc'}}>
+    <nav className="navbar navbar-expand-md navbar-light bg-light" style={{boxShadow: '0 0 10px #ccc'}}>
       <Link className="navbar-brand" to="#" style={{textAlign: 'center'}}>
         <h5>Saloon Barber Shop</h5>
       </Link>
